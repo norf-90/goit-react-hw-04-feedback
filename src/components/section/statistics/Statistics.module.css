@@ -1,0 +1,9 @@
+.text {
+    /* display: block; */
+    margin: 0;
+}
+
+.textValue {
+    font-weight: 900;
+    color: #005247;
+}
