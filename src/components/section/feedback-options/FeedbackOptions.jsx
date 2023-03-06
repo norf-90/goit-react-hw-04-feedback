@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { GrDislike, GrLike } from 'react-icons/gr';
 import { BsEmojiNeutralFill } from 'react-icons/bs';
 import css from './FeedbackOptions.module.css';
+
 const FeedbackOptions = ({
   onLeaveFeedback: { increaseGood, increaseBad, increaseNeutral },
 }) => {
