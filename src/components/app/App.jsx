@@ -25,7 +25,7 @@ const App = () => {
 
       case 'neutral':
         setCurrentGif(
-          'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2E5MGMxYTU2NDVlMzEyZGE2NjdkNDM4MjUxYWRmNDgxYTQ1OWZkNiZjdD1z/G9Zh8sZYPrZho46lAh/giphy.gif'
+          'https://media3.giphy.com/media/j1nXa2S9Vc28VQSXYS/200w.webp?cid=ecf05e47vs6bcgwgvru3slhep9l98sruiib640q2brgl6gb3&rid=200w.webp&ct=s'
         );
         break;
 
