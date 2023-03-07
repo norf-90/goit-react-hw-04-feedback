@@ -4,21 +4,21 @@ import { BsEmojiNeutralFill } from 'react-icons/bs';
 import css from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({
-  onLeaveFeedback: { increaseGood, increaseBad, increaseNeutral },
+  onLeaveFeedback: { onGoodFeedback, onBadFeedback, onNeutralFeedback },
 }) => {
   return (
     <div className={css.btnWrapper}>
-      <button className={css.btn} onClick={increaseGood}>
+      <button className={css.btn} onClick={onGoodFeedback}>
         <GrLike size="20" />
         <span className={css.btnText}>Good</span>
       </button>
 
-      <button className={css.btn} onClick={increaseNeutral}>
+      <button className={css.btn} onClick={onNeutralFeedback}>
         <BsEmojiNeutralFill fill="#005247" size="20" />
         <span className={css.btnText}>Neutral</span>
       </button>
 
-      <button className={css.btn} onClick={increaseBad}>
+      <button className={css.btn} onClick={onBadFeedback}>
         <GrDislike size="20" />
         <span className={css.btnText}>Bad</span>
       </button>
@@ -28,9 +28,9 @@ const FeedbackOptions = ({
 
 FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.shape({
-    increaseGood: PropTypes.func,
-    increaseBad: PropTypes.func,
-    increaseNeutral: PropTypes.func,
+    onGoodFeedback: PropTypes.func,
+    onBadFeedback: PropTypes.func,
+    onNeutralFeedback: PropTypes.func,
   }),
 };
 
